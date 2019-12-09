@@ -6,6 +6,8 @@ import { BlogsComponent } from './blogs/blogs/blogs.component';
 import { BlogDetailsComponent } from './blogs/blog-details/blog-details.component';
 import { IndexPageComponent } from './blogs/index-page/index-page.component';
 import { Routes, RouterModule } from '@angular/router';
+import { BlogHeaderComponent } from './headers/blog-header/blog-header.component';
+import { IndexHeaderComponent } from './headers/index-header/index-header.component';
 
 const routes: Routes = [
   { path: "", component: IndexPageComponent },
@@ -19,7 +21,9 @@ const routes: Routes = [
     AppComponent,
     BlogsComponent,
     BlogDetailsComponent,
-    IndexPageComponent
+    IndexPageComponent,
+    BlogHeaderComponent,
+    IndexHeaderComponent
   ],
   imports: [
     BrowserModule,
